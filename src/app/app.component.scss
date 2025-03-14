@@ -1,0 +1,40 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  
+    label {
+      display: inline-block;
+      width: 60px;
+      text-align: right;
+      margin-right: 10px;
+    }
+    
+    input {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100px;
+    }
+    
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+    
+    ul {
+      margin-top: 20px;
+      list-style-type: none;
+      padding: 0;
+      
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }

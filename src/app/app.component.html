@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+  <div>
+    <label for="start">Inicio:</label>
+    <input id="start" type="number" [(ngModel)]="start">
+  </div>
+  <div>
+    <label for="limit">Límite:</label>
+    <input id="limit" type="number" [(ngModel)]="limit">
+  </div>
+  <button (click)="generateSeries()">Generar FizzBuzz</button>
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+  <ul>
+    <li *ngFor="let item of series">{{ item }}</li>
+  </ul>
+</div>
